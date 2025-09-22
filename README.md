@@ -1,30 +1,30 @@
 <h1>📚 Learning Management System</h1>
 A modern LMS built with PHP and MySQL featuring admin panel and student dashboard with dark theme UI.
 
-✨ Features
+<h3>✨ Features</h3>
 Admin Panel: Dashboard, User Management, Quiz Creation, Assignment System, Reports & Analytics, Leaderboard
 
 Student Portal: Take Quizzes, Submit Assignments, Track Progress, View Rankings
 
-🛠️ Tech Stack
+<h3>🛠️ Tech Stack</h3>
 Backend: PHP 8.0+, MySQL 8.0+
 
 Frontend: Bootstrap 5, Font Awesome, Chart.js
 
 Server: Apache/XAMPP
 
-🚀 Quick Setup
+<h3>🚀 Quick Setup</h3>
 Clone repository
 
 bash
-git clone https://github.com/yourusername/learning-management-system.git
+<h2>git clone https://github.com/yourusername/learning-management-system.git</h2>
 Database setup
 
 Create MySQL database learning_platform
 
 Tables auto-create on first run
 
-Configuration
+<h4>Configuration</h4>
 
 php
 $host = 'localhost';
@@ -37,14 +37,14 @@ Admin: http://localhost/lms/admin/
 
 Student: http://localhost/student/
 
-📂 Structure
+<h3>📂 Structure</h3>
 
 learnarena/
 ├── admin/          # Admin panel (dashboard, users, quizzes, reports)
 ├── student/        # Student portal (quizzes, assignments, profile)  
 ├── uploads/        # File uploads
 └── assets/         # CSS, JS, images
-🎯 Key Features
+<h3>🎯 Key Features</h3>
 Auto-Schema Repair - Fixes database issues automatically
 
 Modern Dark UI - Professional navy blue theme with glassmorphism
@@ -57,16 +57,13 @@ Role-Based Access - Admin/Student separation
 
 Responsive Design - Works on all devices
 
-🔧 Sample Accounts
-Admin: admin@example.com / admin123
-Student: student@example.com / student123
 
-📊 Database Tables
+<h3>📊 Database Tables</h3>
 users, subjects, lessons, quizzes, quiz_questions, quiz_attempts, assignments, assignment_submissions, settings
 
-🤝 Contributing
+<h3>🤝 Contributing</h3>
 Fork → Feature branch → Commit → Push → Pull Request
 
-⭐ Star this repo if you find it helpful!
+<h3>⭐ Star this repo if you find it helpful!</h3>
 
 Built with PHP, MySQL & modern web technologies
