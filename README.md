@@ -39,11 +39,11 @@ Student: http://localhost/student/
 
 <h3>📂 Structure</h3>
 
-learnarena/
-├── admin/          # Admin panel (dashboard, users, quizzes, reports)
-├── student/        # Student portal (quizzes, assignments, profile)  
-├── uploads/        # File uploads
-└── assets/         # CSS, JS, images
+learnarena/<br>
+├── admin/          # Admin panel (dashboard, users, quizzes, reports)<br>
+├── student/        # Student portal (quizzes, assignments, profile)<br>  
+├── uploads/        # File uploads<br>
+└── assets/         # CSS, JS, images<br>
 <h3>🎯 Key Features</h3>
 Auto-Schema Repair - Fixes database issues automatically
 
