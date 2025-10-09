@@ -31,7 +31,7 @@ function checkLogin() {
     }
 }
 
-// Function to update user online status
+
 function updateOnlineStatus($user_id, $status) {
     global $conn;
     $stmt = $conn->prepare("UPDATE users SET status = ? WHERE id = ?");
