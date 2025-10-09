@@ -23,7 +23,7 @@ function checkAdmin() {
     }
 }
 
-// Function to check if user is logged in
+
 function checkLogin() {
     if (!isset($_SESSION['user_id'])) {
         header("Location: login.php");
