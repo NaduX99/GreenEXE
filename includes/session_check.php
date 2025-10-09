@@ -19,7 +19,7 @@ function checkSessionAndRedirect() {
             session_unset();
             session_destroy();
             
-            // Redirect with timeout message
+            
             header("Location: ../login.php?timeout=1");
             exit();
         }
