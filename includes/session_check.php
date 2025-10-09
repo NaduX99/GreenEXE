@@ -23,7 +23,7 @@ function checkSessionAndRedirect() {
             header("Location: ../login.php?timeout=1");
             exit();
         }
-        // Update last activity time
+
         $_SESSION['login_time'] = time();
     }
 }
