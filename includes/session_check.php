@@ -12,7 +12,7 @@ function checkSessionAndRedirect() {
     
     if (isset($_SESSION['login_time'])) {
         if ((time() - $_SESSION['login_time']) > $session_timeout) {
-            // Update user status to offline
+       
             updateOnlineStatus($_SESSION['user_id'], 'offline');
             
             // Clear session
