@@ -1,7 +1,7 @@
 <?php
 include_once 'config.php';
 
-// Function to check session and redirect if expired
+
 function checkSessionAndRedirect() {
     $session_timeout = 30 * 60; // 30 minutes
     
