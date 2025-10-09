@@ -3,7 +3,7 @@ include_once 'config.php';
 
 
 function checkSessionAndRedirect() {
-    $session_timeout = 30 * 60; // 30 minutes
+    $session_timeout = 30 * 60; 
     
     if (!isset($_SESSION['user_id'])) {
         header("Location: ../login.php");
