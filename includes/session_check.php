@@ -15,7 +15,7 @@ function checkSessionAndRedirect() {
        
             updateOnlineStatus($_SESSION['user_id'], 'offline');
             
-            // Clear session
+         
             session_unset();
             session_destroy();
             
