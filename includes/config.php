@@ -15,7 +15,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Function to check if user is admin
+
 function checkAdmin() {
     if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
         header("Location: login.php");
