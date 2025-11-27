@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// Database connection
+
 $conn = new mysqli('localhost', 'root', '', 'learning_platform');
 
 if ($conn->connect_error) {
@@ -10,7 +10,7 @@ if ($conn->connect_error) {
 
 $message = '';
 
-// Create users table if it doesn't exist
+
 $create_table = "CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
@@ -22,7 +22,7 @@ $create_table = "CREATE TABLE IF NOT EXISTS users (
 )";
 $conn->query($create_table);
 
-// Create default users
+
 $admin_exists = $conn->query("SELECT id FROM users WHERE email = 'admin@admin.com'")->num_rows;
 if ($admin_exists == 0) {
     $admin_hash = password_hash('admin', PASSWORD_DEFAULT);
@@ -35,7 +35,7 @@ if ($student_exists == 0) {
     $conn->query("INSERT INTO users (name, email, password, role) VALUES ('Student', 'student@student.com', '$student_hash', 'student')");
 }
 
-// Handle login
+
 if (isset($_POST['login'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -272,3 +272,4 @@ p{
     </script>
 </body>
 </html>
+
